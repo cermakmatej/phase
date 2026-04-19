@@ -3,7 +3,7 @@ Bakalářská práce na téma fázování ze sekvenačních dat
 
 ### Instalace závislostí
 
-Pro správné fungování programu je potřeba mít nainstalovaný nástroj **bcftools**.
+Pro správné fungování programu je potřeba mít nainstalovaný nástroj **bcftools** (https://samtools.github.io/bcftools/).
 
 Kromě toho je nutné do `bcftools` přidat plugin **`+process`**.  
 Zdrojový soubor pluginu `process.c` se nachází v adresáři `utils`.
@@ -17,3 +17,9 @@ Nejjednodušší postup je následující:
 
    ```bash
    make
+
+### Program
+Program se nachází v adresáři `program`. Lze spustit v návaznosti na zmíněný plugin pomocí příkazu:
+   ```bash
+bcftools +process -a alignment.bam -f reference.fasta -s variants.vcf \
+| python program/phase.py --variant_file variants.fasta > phased.txt
