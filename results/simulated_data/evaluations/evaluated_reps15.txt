@@ -1,0 +1,15 @@
+================ EVALUATION SUMMARY ================
+Total blocks evaluated:  7923
+Total matches:           32682
+Total mismatches:        725
+Total unphased:          12
+Overall accuracy:        0.9779466770400072
+Only in true (Missed):   7842
+Only in pred (False):    1
+----------------------------------------------------
+Switch errors:           422 (out of 25484 opportunities)
+Global Switch Error Rate:0.0166
+----------------------------------------------------
+Average mismatch ratio:  0.0167
+Fully phased sets:       0.9484
+====================================================
