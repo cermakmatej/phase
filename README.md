@@ -22,4 +22,4 @@ Nejjednodušší postup je následující:
 Program se nachází v adresáři `program`. Lze spustit v návaznosti na zmíněný plugin pomocí příkazu:
    ```bash
 bcftools +process -a alignment.bam -f reference.fasta -s variants.vcf \
-| python program/phase.py --variant_file variants.fasta > phased.txt
+| python program/phase.py --variant_file variants.vcf > phased.txt
