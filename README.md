@@ -3,7 +3,7 @@ Bakalářská práce na téma fázování ze sekvenačních dat
 
 ### Instalace závislostí
 
-Program využívá knihovny numpy a tqdm, závislosti se nacházejí v souboru requirements.txt.
+Program využívá knihovny numpy a tqdm, závislosti se nacházejí v souboru `requirements.txt`.
 
 Pro správné fungování programu je potřeba mít nainstalovaný nástroj **bcftools** (https://samtools.github.io/bcftools/).
 
