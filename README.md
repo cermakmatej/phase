@@ -27,7 +27,7 @@ bcftools +process -a alignment.bam -f reference.fasta -s variants.vcf \
 ```
 
 ### Simulace
-Simulace kromě **bcftools** využívá nástroje **art** (verze 2.5.8) (https://www.niehs.nih.gov/research/resources/software/biostatistics/art), **bwa** (verze 0.7.17-r1188) (https://bio-bwa.sourceforge.net/) a **samtools** (verze verze 1.15.1) (https://www.htslib.org/). Nástroj **art** je přiložen v adresáři `utils` .Závislosti jsou uvedeny v souboru `sim_requirements.txt`.
+Simulace kromě **bcftools** využívá nástroje **art** (verze 2.5.8) (https://www.niehs.nih.gov/research/resources/software/biostatistics/art), **bwa** (verze 0.7.17-r1188) (https://bio-bwa.sourceforge.net/) a **samtools** (verze verze 1.15.1) (https://www.htslib.org/). Závislosti jsou uvedeny v souboru `sim_requirements.txt`.
 
 Celá simulace lze spustit pomocí skriptu `simulation_complete.sh`. První krok simulace, náhodný výběr variant z katalogu **GnomAD** (verze v2.1.1) vyžaduje velký soubor `gnomad.genomes.r2.1.1.sites.22.vcf.bgz` (https://gnomad.broadinstitute.org/downloads#v2). Proto je přiložen soubor `simulated_indiv_chr22.vcf` s již vybranými variantami.  
 
